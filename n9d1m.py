@@ -91,7 +91,7 @@ print(logo)
 
 # Start time
 
-print([-"\033[1;30mSTART TIME-]:", time.strftime("%Y-%m-%d %H:%M:%S"))  
+print("\033[1;30mSTART TIME:", time.strftime("%Y-%m-%d %H:%M:%S"))  
 
 
 
