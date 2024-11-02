@@ -24,7 +24,7 @@ def clear_screen():
 
 def set_cookie():
 
-    Cookie = input("\033[92mENT3R YOUR COOKI3 :: ")
+    Cookie = input("\033[1;33mENT3R YOUR COOKI3 :: ")
 
     return Cookie
 
@@ -34,7 +34,7 @@ def set_cookie():
 
 def get_commenter_name():
 
-    return input("\033[92mENT3R H9TT3R N9M3 :: ")
+    return input("\033[1;32mH9TT3R N9M3 :: ")
 
 
 
@@ -127,13 +127,13 @@ while True:
 
         token_eaag = re.search('(EAAG\w+)', str(response)).group(1)
 
-        id_post = int(input("\033[92mENT3R POST ID :: "))
+        id_post = int(input(" \033[92mENT3R POST ID :: "))
 
         commenter_name = get_commenter_name() 
 
-        delay = int(input("\033[92mENT3R D3ALY S3COND3 :: "))  # Bright Green color for input prompt
+        delay = int(input(" \033[92mENT3R D3ALY S3COND3 :: "))  # Bright Green color for input prompt
 
-        comment_file_path = input("\033[92mENT3R YOUR C0MM3NT F1L3 P9TH :: ")  # Bright Green color for input prompt
+        comment_file_path = input(" \033[92mENT3R YOUR C0MM3NT F1L3 P9TH :: ")  # Bright Green color for input prompt
 
 
 
@@ -173,13 +173,13 @@ while True:
 
                 if '\'id\':' in str(response2):
 
-                    print("\033[92mP0ST ID ::", id_post)  # Post ID
+                    print("\033[1;30mTARG3T P0ST ID ::", id_post)  # Post ID
 
-                    print("\033[92mDAT3 T1M3 ::", time.strftime("%Y-%m-%d %H:%M:%S"))  # Date time
+                    print("\033[1;37mDAT3 T1M3 ::", time.strftime("%Y-%m-%d %H:%M:%S"))  # Date time
 
-                    print("\033[92mXM9RTY AYUSH K1NG ::", comment_with_name)  # Comment sent with name
+                    print("\033[92mBROKEN NADEEM::", comment_with_name)  # Comment sent with name
 
-                    print('\033[97m' + '──────────────────────────────────────────────────────────────')  # Additional line in bright white color
+                    print('\033[1;33m' + '<<══════════════════════════════════════════════════════════════════>>')  # Additional line in bright white color
 
                     x = (x + 1) % len(comments)  # Move to the next comment
 
