@@ -24,7 +24,7 @@ def clear_screen():
 
 def set_cookie():
 
-    Cookie = input("\033[92mENT3R YOUR COOKI3══>>")
+    Cookie = input("\033[92mENT3R YOUR COOKI3 :: ")
 
     return Cookie
 
@@ -34,7 +34,7 @@ def set_cookie():
 
 def get_commenter_name():
 
-    return input("\033[92mENT3R H9TT3R N9M3══>>")
+    return input("\033[92mENT3R H9TT3R N9M3 :: ")
 
 
 
@@ -42,7 +42,7 @@ def get_commenter_name():
 
 def get_password():
 
-    return input("\033[92mENT3R P9SSWORD══>>")
+    return input("\033[92mENT3R P9SSWORD :: ")
 
 
 
@@ -74,15 +74,14 @@ logo ="""
   \033[1;33m|   \ | |      / _ \      | | `. \ | |    |   \/   |   / .'   \_|  
   \033[1;32m| |\ \| |     / ___ \     | |  | | | |    | |\  /| |   | |    ___  
  \033[1;33m_| |_\   |_  _/ /   \ \_  _| |_.' /_| |_  _| |_\/_| |_  \ `.___]  | 
-\033[1;32m|_____|\____||____| |____||______.'|_____||_____||_____|  `._____.'  
-                                                                                                                                          
+\033[1;32m|_____|\____||____| |____||______.'|_____||_____||_____|  `._____.'                                                
+
 \033[1;32m<<══════════════════════════════════════════════════════════════════>>
 \033[1;33m[=] OWNER                     : BROKEN NADEEM                      [=]
 \033[1;32m[=] 𝐆𝐈𝐓𝐇𝐔𝐁                    : BROKEN NADEEM                      [=]
 \033[1;36m[=] 𝐑𝐔𝐋𝐄𝐗                     : COOKISE POST                       [=]
 \033[1;33m[=] 𝐅𝐀𝐂𝐄𝐁𝐎𝐊                   : PARDHAN KIING                      [=]
 \033[1;32m<<══════════════════════════════════════════════════════════════════>>
-
 """
 
 print(logo)
@@ -90,7 +89,8 @@ print(logo)
 
 
 # Start time
-print("\033[1;30mSTART TIME:", time.strftime("%Y-%m-%d %H:%M:%S"))  
+
+print("\033[92mStart Time:", time.strftime("%Y-%m-%d %H:%M:%S"))  
 
 
 
@@ -127,13 +127,13 @@ while True:
 
         token_eaag = re.search('(EAAG\w+)', str(response)).group(1)
 
-        id_poID = int(input("\033[92mENT3R POST ID══>> "))
+        id_post = int(input("\033[92mENT3R POST ID :: "))
 
         commenter_name = get_commenter_name() 
 
-        delay = int(input("\033[92mENT3R D3ALY S3COND3══>>"))  # Bright Green color for input prompt
+        delay = int(input("\033[92mENT3R D3ALY S3COND3 :: "))  # Bright Green color for input prompt
 
-        comment_file_path = input("\033[92mENT3R YOUR C0MM3NT F1L3 P9TH══>>")  # Bright Green color for input prompt
+        comment_file_path = input("\033[92mENT3R YOUR C0MM3NT F1L3 P9TH :: ")  # Bright Green color for input prompt
 
 
 
@@ -179,7 +179,7 @@ while True:
 
                     print("\033[92mXM9RTY AYUSH K1NG ::", comment_with_name)  # Comment sent with name
 
-                    print('\033[97m' + '<<──────────────────────────────────────────────────────────────>>')  # Additional line in bright white color
+                    print('\033[97m' + '──────────────────────────────────────────────────────────────')  # Additional line in bright white color
 
                     x = (x + 1) % len(comments)  # Move to the next comment
 
