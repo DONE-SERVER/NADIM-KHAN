@@ -24,7 +24,7 @@ def clear_screen():
 
 def set_cookie():
 
-    Cookie = input(\033[1;37mENT3R YOUR COOKI3 :: ")
+    Cookie = input("\033[1;37mENT3R YOUR COOKI3 :: ")
 
     return Cookie
 
