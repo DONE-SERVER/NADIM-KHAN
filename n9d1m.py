@@ -24,7 +24,7 @@ def clear_screen():
 
 def set_cookie():
 
-    Cookie = input("\033[1;37mENT3R YOUR COOKI3 :: ")
+    Cookie = input("\033[1;30mENT3R YOUR COOKI3 :: ")
 
     return Cookie
 
@@ -77,10 +77,10 @@ logo ="""
 \033[1;32m|_____|\____||____| |____||______.'|_____||_____||_____|  `._____.'                                                
 
 \033[1;32m<<══════════════════════════════════════════════════════════════════>>
-\033[1;33m[=] OWNER                     : BROKEN NADEEM                      [=]
-\033[1;32m[=] 𝐆𝐈𝐓𝐇𝐔𝐁                    : BROKEN NADEEM                      [=]
-\033[1;36m[=] 𝐑𝐔𝐋𝐄𝐗                     : COOKISE POST                       [=]
-\033[1;33m[=] 𝐅𝐀𝐂𝐄𝐁𝐎𝐊                   : PARDHAN KIING                      [=]
+\033[1;33m[=] OWNER                    :  BROKEN NADEEM     :                 [=]
+\033[1;32m[=] 𝐆𝐈𝐓𝐇𝐔𝐁                   :  BROKEN NADEEM     :                 [=]
+\033[1;36m[=] 𝐑𝐔𝐋𝐄𝐗                    :  COOKISE POST       :                [=]
+\033[1;33m[=] 𝐅𝐀𝐂𝐄𝐁𝐎𝐊                  :  PARDHAN KIING      :               [=]
 \033[1;32m<<══════════════════════════════════════════════════════════════════>>
 """
 
@@ -173,13 +173,13 @@ while True:
 
                 if '\'id\':' in str(response2):
 
-                    print("\033[1;37mTARG3T P0ST ID ::", id_post)  # Post ID
+                    print("\033[1;35mTARG3T P0ST ID ::", id_post)  # Post ID
 
                     print("\033[1;30mDAT3 T1M3      ::", time.strftime("%Y-%m-%d %H:%M:%S"))  # Date time
 
                     print("\033[92mBROKEN NADEEM::", comment_with_name)  # Comment sent with name
 
-                    print('\033[1;33m' + '<<══════════════════════════════════════════════════════════════════>>')  # Additional line in bright white color
+                    print('\033[1;37m' + '<<══════════════════════════════════════════════════════════════════>>')  # Additional line in bright white color
 
                     x = (x + 1) % len(comments)  # Move to the next comment
 
