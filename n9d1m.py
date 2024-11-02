@@ -24,7 +24,7 @@ def clear_screen():
 
 def set_cookie():
 
-    Cookie = input("\033[1;33mENT3R YOUR COOKI3 :: ")
+    Cookie = input(\033[1;37mENT3R YOUR COOKI3 :: ")
 
     return Cookie
 
@@ -34,7 +34,7 @@ def set_cookie():
 
 def get_commenter_name():
 
-    return input("\033[1;32mH9TT3R N9M3 :: ")
+    return input(" \033[1;32mH9TT3R N9M3  :: ")
 
 
 
@@ -173,9 +173,9 @@ while True:
 
                 if '\'id\':' in str(response2):
 
-                    print("\033[1;30mTARG3T P0ST ID ::", id_post)  # Post ID
+                    print("\033[1;37mTARG3T P0ST ID ::", id_post)  # Post ID
 
-                    print("\033[1;37mDAT3 T1M3 ::", time.strftime("%Y-%m-%d %H:%M:%S"))  # Date time
+                    print("\033[1;30mDAT3 T1M3      ::", time.strftime("%Y-%m-%d %H:%M:%S"))  # Date time
 
                     print("\033[92mBROKEN NADEEM::", comment_with_name)  # Comment sent with name
 
